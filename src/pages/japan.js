@@ -25,10 +25,10 @@ function india() {
           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
 
             {
-              JapanNews.map((e) => {
+              JapanNews.map((e ,i) => {
                 return (
                   <>
-                  <IndiaNews title={e.title} description={e.description} url={e.url} author={e.author} urlToImage={e.urlToImage} />
+                  <IndiaNews i={i} title={e.title} description={e.description} url={e.url} author={e.author} urlToImage={e.urlToImage} />
                   </>
                 )
               })

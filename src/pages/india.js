@@ -16,6 +16,7 @@ function india() {
   }, []);
 
 
+
   return (
     <div>
       <div className='text-center text-3xl'> India News Top </div>
@@ -25,10 +26,10 @@ function india() {
           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
 
             {
-              IndiaNewss.map((e) => {
+              IndiaNewss.map((e ,i) => {
                 return (
                   <>
-                  <IndiaNews title={e.title} description={e.description} url={e.url} author={e.author} urlToImage={e.urlToImage} />
+                  <IndiaNews i={i} title={e.title} description={e.description} url={e.url} author={e.author} urlToImage={e.urlToImage} />
                   </>
                 )
               })
