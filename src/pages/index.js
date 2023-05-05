@@ -22,10 +22,6 @@ export default function Home() {
   return (
       <>
       <LoadingBar color='#f11946' ref={ref} />
-
-
-
-
    <div>
     <Custom/>
    </div>

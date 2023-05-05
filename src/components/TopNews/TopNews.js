@@ -2,8 +2,8 @@ import React, { useEffect, useState, useRef } from 'react'
 
 
 
-
 const TopNews = () => {
+  
     const [NewsTop, setNewsTop] = useState([]);
     // const NewsTop = [{ title: "123", description: "123", urlToImage: "123", url: "123" }]  /// test
 
@@ -17,6 +17,7 @@ const TopNews = () => {
             })
             .catch((err) => console.error(err))
     }, []);
+    
 
     NewsTop.map((e) => {
 
@@ -74,7 +75,7 @@ const TopNews = () => {
 
 
 
-
 export default TopNews;
+
 
 
